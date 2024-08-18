@@ -1,0 +1,293 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #25282A;
+    color: #fff;
+  }
+  
+  main {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    min-width: 300px;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .logo {
+    max-width: 300px;
+  }
+  
+  .logo img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /* start of navigation */
+  
+  nav ul {
+    text-align: center;
+    }
+  
+  nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 2rem;
+    padding: 1vh 0 0 50px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  nav li a:hover {
+    color: black;
+  }
+  
+  /* end of navigation */
+  
+  /* @media for header */
+  
+  @media only screen and (max-width: 912px) {
+    main {
+      margin-top: 1.5rem;
+    }
+  
+    header {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    nav ul {
+      grid-template-columns: 1fr;
+    }
+  
+    .logo {
+      margin: 0 auto;
+    }
+  }
+  
+  /* end of @media for header */
+  
+  /* start of section-up */
+  
+  #content {
+    position: relative;
+    max-width: 500px;
+    min-width: 200px;
+    margin: 0 auto;
+  }
+  
+  .content-up-holder {
+    margin: 3rem auto;
+  }
+  
+  .content-up-holder h1 {
+    color: orange;
+  }
+  
+  .content-up-holder p {
+    font-size: 1.3rem;
+  }
+  
+  .content-up-holder img {
+    width: 47px;
+    float: left;
+    padding-right: 30px;
+  }
+  
+  .video {
+    text-align: center;
+  }
+  
+  #video {
+    width: 300px;
+    height: 250px;
+  }
+  
+  /* end of section-up */
+  
+  /* start of section-up @media*/
+  
+  @media only screen and (max-width: 912px) {
+    .content-up-holder img {
+      display: none;
+    }
+  
+    .content-up-holder {
+      text-align: center;
+    }
+  
+  }
+  
+  /* end of section-up @media*/
+  
+  /* start of section-down */
+  
+  .content-down {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0;
+    justify-content: space-between;
+    min-width: 100%;
+  }
+  
+  .item {
+    border: 1px solid #fff;
+    width: 140px;
+    min-width: 140px;
+    line-height: 20px;
+    margin: 0 10px;
+    
+  }
+  
+  .item heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: grey;
+    display: block;
+  }
+  
+  .item h1 {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  
+  .content-down button {
+    background-color: #9E8109;
+    color: #fff;
+    margin: 10px 0 20px 0;
+    border: 1px solid transparent;
+    border-radius: 2px;
+  }
+  
+  .content-down button:hover {
+    background-color: lightgreen;
+    color: black;
+    cursor: pointer;
+  }
+  
+  #select {
+    padding: 5px 5px 2px 5px;
+  }
+  
+  /* end of section-down */
+  
+  /* start of section-down @media*/
+  
+  @media only screen and (max-width: 912px) {
+    .content-down {
+      justify-content: center;
+      align-items: center;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .content-down
+     { flex-direction: column;
+        margin-top: 0;
+      }
+  
+    .item {
+      margin-top: 20px;
+    }
+  
+    .item::first-of-kind {
+      margin-top: 0px;
+    }
+  
+  }
+  
+  /* end of section-down @media*/
+  
+  /* start of enquiry */
+  
+  
+  .enquiry {
+    text-align: center;
+  }
+  
+  
+  label {
+    width: 300px;
+    display: inline-block;
+    text-align: right;
+    margin: 0 0 0 3.5rem;
+    font-size: 1.5rem;
+    padding: 10px;
+    
+   
+  }
+  
+  input[type=submit] {
+   display: block;
+   margin: 10px auto 10px auto;
+   cursor: pointer; 
+   color: black;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #9E8109;
+  }
+  
+  fieldset {
+    margin: auto;
+    width: 466px;
+    max-width: 466px;
+    padding-left: 10px;
+  }
+  
+  legend {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  
+  /* end of enquiry */
+  
+  /* start of enquiry @media*/
+  
+  @media only screen and (max-width: 912px) {
+    fieldset {
+      width: 452px;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 500px) {
+  
+    label {
+    margin-left: 6rem;
+    width: auto;
+    text-align: left;
+    display: block;
+    }
+  
+    input{
+      display: block;
+    }
+  
+    fieldset {
+      width: 300px;
+    }
+  
+  }
+  
+  /* end of enquiry @media*/

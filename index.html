@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Product Landing Page</title>
+</head>
+<body>
+  <main>
+    <header id="header">
+      <img id="header-img" class="logo" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="Logo" loading="lazy" />
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#About">About</a></li>
+          <li><a class="nav-link" href="#Buy">Buy</a></li>
+          <li><a class="nav-link" href="#Enquiry">Enquiry</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="content">
+      <div class="content-up">
+        <div class="content-up-holder">
+         <img src="http://www.abis.si/slike/speedometer.png" width="50px">
+         <h1>Fast service</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="content-up-holder">
+          <img src="http://www.abis.si/slike/work.png" width="50px">
+          <h1 id="About">Courses</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         </div>
+         <div class="content-up-holder"> 
+          <img src="http://www.abis.si/slike/official-documents.png" width="50px">
+          <h1>Certified</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+         <div class="video">
+       <iframe id="video" src="https://www.youtube.com/embed/epmoV2HRs9U?autoplay=1&muted=1&loop=1" frameborder="1" allow="autoplay"></iframe>​ 
+       </div>
+      </div>
+      <div class="bottom">
+        <div class="content-down">
+            <div class="item">
+              <heading>ITEM ONE</heading>
+              <h1>500$</h1>
+              <p>Lorem ipsum.</p>
+              <p>Lorem ipsum.</p>
+              <p>Lorem ipsum.</p>
+              <p>Lorem ipsum.</p>
+              <button value="Submit"><p id="select">SELECT</p></button>
+            </div>
+            <div class="item">
+              <heading id="Buy">ITEM TWO</heading>
+              <h1>500$</h1>
+              <p>Lorem ipsum.</p>
+              <p>Lorem ipsum.</p>
+              <p>Lorem ipsum.</p>
+              <p>Lorem ipsum.</p>
+              <button value="Submit"><p id="select">SELECT</p></button>
+            </div>
+            <div class="item">
+              <heading>ITEM THREE</heading>
+              <h1>500$</h1>
+              <p>Lorem ipsum.</p>
+              <p>Lorem ipsum.</p>
+              <p>Lorem ipsum.</p>
+              <p>Lorem ipsum.</p>
+              <button value="Submit"><p id="select">SELECT</p></button>
+            </div>  
+        </div>
+        <div id="Enquiry" class="enquiry">
+          <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+            <fieldset>
+            <legend>Enquiry</legend>
+            <label for="name">Name: 
+              <input type="text" id="name" name="name" placeholder="Enter your name.." required /></label>
+              <label for="subject">Subject: 
+              <input type="text" id="subject" name="subject" placeholder="Subject.." required /></label>
+            <label for="email">Email: 
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required /></label>
+            <input id="submit" type="submit" value="Submit">
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>    
+</body>
+</html>
